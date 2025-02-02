@@ -1,0 +1,9 @@
+# Directories
+.idea/
+.vs/
+**/__pycache__/
+venv/
+
+# Files
+*.lock
+*.db
