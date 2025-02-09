@@ -9,13 +9,13 @@ class Market(Base):
 
     id = Column(Integer, autoincrement=True, primary_key=True)
 
-    Date = Column(Date, nullable=False)
+    date = Column(Date, nullable=False)
 
-    Close = Column(Double, nullable=False)
-    High = Column(Double, nullable=False)
-    Low = Column(Double, nullable=False)
-    Open = Column(Double, nullable=False)
-    Volume = Column(Double, nullable=False)
+    close = Column(Double, nullable=False)
+    high = Column(Double, nullable=False)
+    low = Column(Double, nullable=False)
+    open = Column(Double, nullable=False)
+    volume = Column(Double, nullable=False)
 
     ticker_id = mapped_column(Integer, ForeignKey('tb_tickers.id'), nullable=False)
     ticker: Mapped["Ticker"] = relationship()
