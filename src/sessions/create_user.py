@@ -1,8 +1,8 @@
 import logging
 from sqlalchemy.orm import Session
-from src.models.user import User as Entity
-from src.dtos.session_dto import User as DTO
-from src.sessions.password_hash import bcrypt_password
+from models.user import User as Entity
+from dtos.session_dto import User as DTO
+from sessions.password_hash import bcrypt_password
 
 logger = logging.getLogger(__name__)
 

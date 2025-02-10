@@ -1,7 +1,7 @@
 import logging
 from datetime import timedelta, datetime, timezone
 import jwt
-from src.infra import configs as mush_config
+from infra import configs as mush_config
 
 # Oauth JWT
 SECRET_KEY = mush_config.JWT_SECRET

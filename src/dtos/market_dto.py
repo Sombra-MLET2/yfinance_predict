@@ -3,36 +3,17 @@ from datetime import date
 
 # Ticker
 class TickerDTO(BaseModel):
-    id: int | None = None
-    ticker: str | None = None
-    name: str | None = None
-    sector: str | None = None
-    businessSummary: str | None = None
-
-class TickerDTOResponse(BaseModel):
-    id: int | None = None
-    ticker: str | None = None
-    name: str | None = None
-    sector: str | None = None
-    businessSummary: str | None = None
+    ticker: str
+    name: str
+    sector: str
+    businessSummary: str
 
 # Market
 class MarketDTO(BaseModel):
-    id: int | None = None
-    date: date 
-    close: float | None = None
-    high: float | None = None
-    low: float | None = None
-    ppen: float | None = None
-    volume: float | None = None
+    date: date
+    close: float
+    high: float
+    low: float
+    open: float
+    volume: int
     ticker_id: int
-
-class MarketDTOResponse(BaseModel):
-    id: int | None = None
-    date: date 
-    close: float | None = None
-    high: float | None = None
-    low: float | None = None
-    ppen: float | None = None
-    volume: float | None = None
-    ticker: TickerDTO

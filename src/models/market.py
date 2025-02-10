@@ -1,7 +1,7 @@
 from sqlalchemy import Column, Integer, Date, Double, ForeignKey
 from sqlalchemy.orm import mapped_column, relationship, Mapped
-from src.infra.database import Base
-from src.models.ticker import Ticker
+from infra.database import Base
+from models.ticker import Ticker
 
 
 class Market(Base):

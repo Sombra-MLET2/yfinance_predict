@@ -4,13 +4,13 @@ from fastapi.security import OAuth2PasswordRequestForm
 from sqlalchemy.orm import Session
 from starlette.exceptions import HTTPException
 from starlette.responses import JSONResponse
-from src.dtos.session_dto import Token, User
-from src.infra.database import get_db
-from src.infra.loggers import logger
-from src.sessions.create_token import create_access_token
-from src.sessions.create_user import create_user
-from src.sessions.find_user import find_user
-from src.sessions.password_hash import verify_password
+from dtos.session_dto import Token, User
+from infra.database import get_db
+from infra.loggers import logger
+from sessions.create_token import create_access_token
+from sessions.create_user import create_user
+from sessions.find_user import find_user
+from sessions.password_hash import verify_password
 
 sessions_router = APIRouter(
     prefix="/sessions",

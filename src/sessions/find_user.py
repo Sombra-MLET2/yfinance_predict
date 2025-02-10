@@ -1,6 +1,6 @@
 import logging
 from sqlalchemy.orm import Session
-from src.models.user import User as Entity
+from models.user import User as Entity
 
 logger = logging.getLogger(__name__)
 
