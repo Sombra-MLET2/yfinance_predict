@@ -5,6 +5,7 @@ MAINTAINER SombraTeam - https://github.com/Sombra-MLET2
 
 ENV NEW_RELIC_APP_NAME="yFinance Predict"
 ENV NEW_RELIC_LICENSE_KEY=$NEW_RELIC_LICENSE_KEY
+ENV PYTHONPATH=./src
 
 WORKDIR /opt/
 

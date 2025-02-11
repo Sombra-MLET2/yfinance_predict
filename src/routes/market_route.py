@@ -14,7 +14,7 @@ from repositories.market_repository import MarketRepository
 from dtos.market_dto import MarketDTO
 
 market_router = APIRouter(
-    prefix="/merket",
+    prefix="/market",
     tags=["market"],
     responses={401: {"description": "Invalid credentials"},
                404: {"description": "Not found"},
