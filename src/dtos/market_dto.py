@@ -2,7 +2,7 @@ from pydantic import BaseModel
 from datetime import date
 
 # Ticker
-class TickerDTO(BaseModel):
+class StockDTO(BaseModel):
     ticker: str
     name: str
     sector: str
@@ -16,4 +16,4 @@ class MarketDTO(BaseModel):
     low: float
     open: float
     volume: int
-    ticker_id: int
+    stock_id: int

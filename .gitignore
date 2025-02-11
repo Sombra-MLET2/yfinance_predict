@@ -3,6 +3,7 @@
 .vs/
 **/__pycache__/
 venv/
+tmp/
 
 # Files
 *.lock
