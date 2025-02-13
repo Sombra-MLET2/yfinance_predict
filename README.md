@@ -50,3 +50,13 @@ EV: 0.9978348706281717
 ![scatter](./predict_model/metrics/real_vs_predicted.png)
 
 ![scatter](./predict_model/metrics/scatter.png)
+
+# Running Load Tests
+
+1. Install dependencies from `requirements.txt`
+2. Navigate to `loadtest` folder and run locust
+3. Visit locust dashboard and start the tests
+```bash
+   cd loadtest
+   locust -f load_test.py --host http://localhost:8080
+```
