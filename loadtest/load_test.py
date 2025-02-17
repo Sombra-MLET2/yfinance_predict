@@ -6,5 +6,5 @@ from load_test_stock import StockTaskSet
 
 
 class PredictTestUser(HttpUser):
-    tasks = [PredictTaskSet, StockTaskSet, MarketTaskSet]
+    tasks = [PredictTaskSet]
     wait_time = between(1, 3)
